@@ -36,7 +36,7 @@ function DoctorCard({ doctor }) {
                 </p>
               </div>
 
-              <div className="inline-block flex flex-row gap-1 ">
+              <div className=" flex flex-row gap-1 ">
                 <FaPhone className=" text-xs inline-block " />
                 <p className=" inline-block  font-light text-xs ">
                   {doctor?.phone}
@@ -53,7 +53,7 @@ function DoctorCard({ doctor }) {
             </div>
             <div>
               <p className="text-gray-700 pt-2">
-                <FaAddressBook /> <p className="text-sm font-semibold" > Hospital Address</p>
+                <FaAddressBook /> <p className="text-sm font-semibold" > Hospital Address </p>
                 <p className="text-sm text-gray-600">
                   {doctor?.hospitaladdress}
                 </p>

@@ -5,7 +5,7 @@ function AppointmentInformation({appointment}) {
   return (
     <div className="p-1">
       <div className=" flex items-center justify-center p-2 font-extrabold text-purple-900 text-2xl  font-mono">
-        Appointment Information
+        Appointment Info
       </div>
       <div className=" shadow-2xl rounded-3xl bg-white flex flex-col">
         <h1 className="p-2 font-extrabold text-purple-900 text-2xl  font-mono  "></h1>

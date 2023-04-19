@@ -64,7 +64,7 @@ export default function ImageUploader
     let databody = links
     console.log(databody)
       axios
-        .post(` https://mediline.vercel.app/api/patients_users/upload?uid=${uid}`, databody)
+        .post(`http://localhost:3000/api/patients_users/upload?uid=${uid}`, databody)
         .then(function (response) {
           console.log(response);
         });
@@ -96,7 +96,7 @@ export default function ImageUploader
           {imageSrc && !uploadData && (
             <p className="mt-3">
               <button className="rounded-lg text-white bg-blue-500 p-3 mt-4  ">
-                Upload Files
+                Upload File
               </button>
             </p>
           )}

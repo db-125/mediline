@@ -155,7 +155,7 @@ console.log(optionsslots);
           {/* <!-- Modal header --> */}
           <div className="flex justify-between items-center p-5 rounded-t border-b dark:border-gray-600">
             <h3 className="text-xl font-medium text-gray-900 dark:text-white">
-              Confirm your Booking
+              Confirm your Appointment
             </h3>
             <button
               onClick={() => {
@@ -184,8 +184,7 @@ console.log(optionsslots);
           {/* <!-- Modal body --> */}
           <div className="p-6 space-y-6">
             <p className="text-base leading-relaxed text-gray-800 dark:text-gray-400">
-              Choose A time from the available slots These slots are not final
-              can change as per doctor&apos;s requirement
+              Select a time from the available slots These slots are Subject to change
               <Select
                 onChange={handleChange}
                 autoFocus={true}
@@ -199,8 +198,7 @@ console.log(optionsslots);
               </label>
               <Select onChange={handleChangetime} options={optionsslots} />
               <p className="text-base leading-relaxed text-gray-500 dark:text-gray-400">
-                This Booking is not final can change as per doctor&apos;s
-                requirement
+                This Appointment is not final and is subject to change
               </p>
             </p>
             <div>

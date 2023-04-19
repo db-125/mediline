@@ -15,7 +15,7 @@ function AppoinmentList({ doctor }) {
 
   useEffect(() => {
     axios
-      .get(`https://mediline.vercel.app/api/appointments?id=${doctor?.uid}`)
+      .get(`http://localhost:3000/api/appointments?id=${doctor?.uid}`)
       .then((resp) => {
         setList(resp.data.data);
       });
@@ -30,7 +30,7 @@ function AppoinmentList({ doctor }) {
        for (i; i < list?.length; i++) {
          const x = list[i]?.patient_id;
          const response = await axios.get(
-           `https://mediline.vercel.app/api/patients_users?uid=${x}`
+           `http://localhost:3000/api/patients_users?uid=${x}`
          );
          console.log(response);
 
@@ -133,7 +133,7 @@ function AppoinmentList({ doctor }) {
                     type="button"
                     class="text-white hover:text-red-700 border border-red-700 bg-red-700 focus:ring-1 focus:outline-none focus:ring-red-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:border-red-500 dark:text-red-500 dark:hover:text-white dark:hover:bg-red-600 dark:focus:ring-red-900"
                   >
-                    Unconfirmed
+                    Pending
                   </button>}
                   {(list[index]?.verifiedbydoctor) &&<button
                     type="button"

@@ -31,7 +31,7 @@ function NewAppointment({doctor}) {
         </div>
         
         <p className="text-white font-bold inline-block">
-         Make a New Clinic Appointment
+         Make a New Appointment
         </p>
       </div>
 {isOpen && <NewAppointmentModal doctor={doctor} isOpen= {isOpen} closeModal={closeModal} openModal={openModal} />}

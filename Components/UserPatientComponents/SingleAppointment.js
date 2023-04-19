@@ -66,7 +66,7 @@ function SingleAppointment({ patient_id, index, handleoff, doctor, list, c }) {
     };
     axios
       .post(
-        ` https://mediline.vercel.app/api/appointments/updatebydoctor?id=${list[index]?.patient_doctor_id}`,
+        ` http://localhost:3000/api/appointments/updatebydoctor?id=${list[index]?.patient_doctor_id}`,
         databody
       )
       .then(function (response) {
@@ -101,7 +101,7 @@ function SingleAppointment({ patient_id, index, handleoff, doctor, list, c }) {
     };
     axios
       .delete(
-        ` https://mediline.vercel.app/api/appointments/updatebydoctor?id=${list[index]?.patient_doctor_id}`,
+        ` http://localhost:3000/api/appointments/updatebydoctor?id=${list[index]?.patient_doctor_id}`,
         databody
       )
       .then(function (response) {
@@ -205,7 +205,7 @@ function SingleAppointment({ patient_id, index, handleoff, doctor, list, c }) {
               </div>
               <div>
                 <p className=" inline font-bold">
-                  <MdTimer className="inline"></MdTimer> Type of Time :
+                  <MdTimer className="inline"></MdTimer> Prefered Time :
                 </p>{" "}
                 <p className="inline"> {list[index]?.date}</p>
               </div>
@@ -226,7 +226,7 @@ function SingleAppointment({ patient_id, index, handleoff, doctor, list, c }) {
               </div>
             </div>
             <div className=" flex  flex-row justify-center items-center  gap-4">
-              Waiting for Confirmation from the Doctor
+              Awaiting Confirmation from the Doctor
               {/* {!list[index]?.verifiedbydoctor && (
                 <div className="flex  flex-row justify-center items-center  gap-4">
                   <div className="font-bold text-gray-700">

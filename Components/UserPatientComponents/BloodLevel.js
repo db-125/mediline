@@ -17,7 +17,7 @@ function BloodLevel({user}) {
               <Image src={asset} width={55} height={50} />
             </div>
             <div className="text-gray-400">
-              Blood Type
+              Blood Group
               <div className="font-bold text-2xl text-purple-900">
                 {user?.blood_group}
               </div>
@@ -41,7 +41,7 @@ function BloodLevel({user}) {
         <div className=" flex flex-row items-center justify-center gap-24 ">
           <div className="items-start  font-thin text-purple-600"></div>
           <div className=" items-center text-sm text-purple-600 ">
-            within normal limits
+            Within normal range
           </div>
           <div className="items-end justify-end font-thin text-purple-600"></div>
         </div>

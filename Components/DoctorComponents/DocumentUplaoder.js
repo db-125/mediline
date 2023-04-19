@@ -85,7 +85,7 @@ console.log(documents)
     };
     axios
       .post(
-        ` https://mediline.vercel.app/api/appointments/updatebydoctor?id=${appointment.patient_doctor_id}`,
+        ` http://localhost:3000/api/appointments/updatebydoctor?id=${appointment.patient_doctor_id}`,
         databody
       )
       .then(function (response) {
@@ -122,7 +122,7 @@ console.log(documents)
           {imageSrc && !uploadData && (
             <p className="mt-3">
               <button className="rounded-lg text-white bg-blue-500 p-3 mt-4  ">
-                Upload Files
+                Upload Doc
               </button>
             </p>
           )}

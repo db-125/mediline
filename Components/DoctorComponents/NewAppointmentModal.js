@@ -138,7 +138,7 @@ function NewAppointmentModal({ isOpen ,openModal,closeModal, doctor }) {
           {/* <!-- Modal header --> */}
           <div className="flex justify-between items-center p-5 rounded-t border-b dark:border-gray-600">
             <h3 className="text-xl font-medium text-gray-900 dark:text-white">
-              Confirm your Booking
+              Confirm your Appointment
             </h3>
             <button
               onClick={() => {
@@ -185,8 +185,7 @@ function NewAppointmentModal({ isOpen ,openModal,closeModal, doctor }) {
               ></input>
             </div>
             <p className="text-base leading-relaxed text-gray-800 dark:text-gray-400">
-              Choose A time from the available slots These slots are not final
-              can change as per doctor&apos;s requirement
+              Select A time from the available slots These slots are subject to change
               <Select
                 onChange={handleChange}
                 autoFocus={true}
@@ -200,8 +199,7 @@ function NewAppointmentModal({ isOpen ,openModal,closeModal, doctor }) {
               </label>
               <Select onChange={handleChangetime} options={optionsslots} />
               <p className="text-base leading-relaxed text-gray-500 dark:text-gray-400">
-                This Booking is not final can change as per doctor&apos;s
-                requirement
+                This Booking is not final and are subject to change
               </p>
             </p>
             <div>

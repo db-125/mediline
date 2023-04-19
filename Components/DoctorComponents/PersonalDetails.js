@@ -102,7 +102,7 @@ function PersonalDetails() {
         </div>
 
         <div className="md:col-span-1">
-          <label for="zipcode">Zipcode</label>
+          <label for="zipcode">Pincode</label>
           <input
             onChange={(e) => setPincode(e.target.value)}
             type="text"

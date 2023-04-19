@@ -59,7 +59,7 @@ const confirmation = ()=>{
   };
   axios
     .post(
-      ` https://mediline.vercel.app/api/appointments/updatebydoctor?id=${list[index]?.patient_doctor_id}`,
+      ` http://localhost:3000/api/appointments/updatebydoctor?id=${list[index]?.patient_doctor_id}`,
       databody
     )
     .then(function (response) {
@@ -97,7 +97,7 @@ const confirmation = ()=>{
   };
   axios
     .delete(
-      ` https://mediline.vercel.app/api/appointments/updatebydoctor?id=${list[index]?.patient_doctor_id}`,
+      ` http://localhost:3000/api/appointments/updatebydoctor?id=${list[index]?.patient_doctor_id}`,
       databody
     )
     .then(function (response) {
@@ -166,7 +166,7 @@ const confirmation = ()=>{
               src={doctor[index]?.photo_url}
             ></img>
             <div className="p-6 ">
-              <div className="font-bold ">Patient`s information</div>
+              <div className="font-bold ">Patient`s info</div>
               <p className=" inline font-bold">
                 <MdPerson className="inline"></MdPerson> Name :
               </p>{" "}
@@ -193,7 +193,7 @@ const confirmation = ()=>{
               </div>
             </div>
             <div className="p-6">
-              <div className="font-bold ">Appointment`s information</div>
+              <div className="font-bold ">Appointment`s info</div>
               <div>
                 <p className=" inline font-bold">
                   <MdApproval className="inline"></MdApproval> Type of

@@ -99,7 +99,7 @@ function BMI({user}) {
           )}
           {category === "Normal" && (
             <div className=" items-center text-purple-600 ">
-              Within Normal Limits
+              Within Normal range
             </div>
           )}
           {category === "OverWeight" && (

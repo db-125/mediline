@@ -52,7 +52,7 @@ console.log(prescreption)
   };
   axios
     .post(
-      ` https://mediline.vercel.app/api/appointments/updatebydoctor?id=${appointment.patient_doctor_id}`,
+      ` http://localhost:3000/api/appointments/updatebydoctor?id=${appointment.patient_doctor_id}`,
       databody
     )
     .then(function (response) {
@@ -122,7 +122,7 @@ console.log(prescreption)
                     value={dosage}
                   ></input>
                   <p className="text-sm text-gray-500 border-t pt-2">
-                    No of days
+                    No. of days
                   </p>
                   <input
                     onChange={(e) => setnoofdays(e.target.value)}

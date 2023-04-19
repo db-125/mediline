@@ -23,19 +23,19 @@ function MLvsPatient() {
       >
         Search for Doctors
       </button>
-      <button
+      {/* <button
         className=" blob2 font-extrabold text-4xl text-white p-3"
         onClick={() => router.push("/DiseasePredictor")}
       >
         Disease Predictor
-      </button>
+      </button> */}
       <div className="p-1">
-        <Image
+        {/* <Image
           className=" invisible lg:visible md:visible rounded-full  "
           height={600}
           width={600}
           src={asset2}
-        />
+        /> */}
       </div>
     </div>
   );

@@ -32,7 +32,7 @@ function DoctorSidebar() {
         <div className="p-6 w-1/2 h-screen bg-blue-50 rounded-lg z-20 fixed top-0 -left-96 lg:left-0 lg:w-60  peer-focus:left-0 peer:transition ease-out delay-150 duration-100">
           <div className="flex flex-col justify-start item-center">
             <h1 className="text-lg text-center cursor-pointer font-bold text-blue-900 border-b border-gray-100 pb-4 w-full">
-              MEDILINE
+              MEDISAFE
             </h1>
             <div className=" my-4 border-b border-gray-100 pb-4">
               <div

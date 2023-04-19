@@ -10,7 +10,7 @@ import { CgProfile } from 'react-icons/cg'
 function Modal({modalhandle, doctor}) {
    const [query, setQuery] = useState("");
    useEffect(() => {
-     axios.get(`https://mediline.vercel.app/api/doctors?uid=${doctor?.uid}`).then((resp) => {
+     axios.get(`http://localhost:3000/api/doctors?uid=${doctor?.uid}`).then((resp) => {
        setQuery(resp.data.data);
      });
      doctor = query
@@ -180,7 +180,7 @@ const handleconfirm = async () => {
                 Timings :{doctor?.timings}
               </p>
               <p className="text-gray-600 pt-3 display-linebreak font-semibold ">
-                General Consultation Fees : {"\u20A8"} {doctor?.fees}
+                OPD Fees : {"\u20A8"} {doctor?.fees}
               </p>
               <div>
                 <p className="flex justify-center items-center font-semibold p-3 text-xl">
@@ -202,7 +202,7 @@ const handleconfirm = async () => {
             </div>
             <div className="flex flex-col p-3 shadow-2xl rounded-2xl">
               <p className=" pt-4 text-2xl font-bold text-blue-900">
-                Dcotor Information
+                Doctor Info
               </p>
               <p className="pt-5 font-semibold text-xl text-gray-600">
                 {doctor?.name}
@@ -234,7 +234,7 @@ const handleconfirm = async () => {
               className=" bg-green-500 rounded-full p-2 text-white font-bold shadow border border-green-500"
             >
               {" "}
-              Book an Appointment
+              Schedule an Appointment
             </button>
           </div>
           {/* <!-- Modal footer --> */}
@@ -245,7 +245,7 @@ const handleconfirm = async () => {
                 <div class="w-full mb-4 border border-gray-200 rounded-lg bg-gray-50 dark:bg-gray-700 dark:border-gray-600">
                   <div class="px-4 py-2 bg-white rounded-t-lg dark:bg-gray-800">
                     <label for="comment" class="sr-only">
-                      Your Review
+                      Your Reviews
                     </label>
                     <input
                       id="comment"

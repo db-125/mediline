@@ -12,7 +12,7 @@ function Patientinformation({patient}) {
   return (
     <div className="p-1">
       <div className=" flex items-center justify-center p-2 font-extrabold text-purple-900 text-2xl  font-mono">
-        Pateint Information
+        Pateint Info
       </div>
       <div className=" shadow-2xl rounded-3xl bg-white flex flex-col">
         <h1 className="p-2 font-extrabold text-purple-900 text-2xl  font-mono  "></h1>
@@ -64,7 +64,7 @@ function Patientinformation({patient}) {
             </div>
             <div className="bg-purple-200 rounded-lg shadow-md shadow-purple-200 p-2 ">
               <div className="p-1 text-purple-900 font-semibold mr-4 ">
-                Body Temperature
+                Body Temp.
               </div>
               <div>
                 <hr className=" shadow-lg shadow-purple-900 mx-auto w-full h-2 rounded-full bg-purple-300  border-0"></hr>
